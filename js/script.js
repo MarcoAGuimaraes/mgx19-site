@@ -1,0 +1,1 @@
+console.log("MGX19 site carregado");
