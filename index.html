@@ -11,6 +11,7 @@
     <meta name="description" content="Automação, dados e soluções digitais para empresas modernas.">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 </head>
 
@@ -177,19 +178,17 @@
 
             <h2>Solicite Contato</h2>
 
-            <form>
+            <form id="contact-form">
 
-                <input type="text" placeholder="Nome" required>
+                <input type="text" name="nome" placeholder="Nome" required>
 
-                <input type="email" placeholder="Email" required>
+                <input type="email" name="email" placeholder="Email" required>
 
-                <input type="tel" placeholder="Telefone">
+                <input type="tel" name="telefone" placeholder="Telefone">
 
-                <textarea placeholder="Mensagem"></textarea>
+                <textarea name="mensagem" placeholder="Mensagem"></textarea>
 
-                <button type="submit">
-                    Enviar
-                </button>
+                <button type="submit">Enviar</button>
 
             </form>
 
