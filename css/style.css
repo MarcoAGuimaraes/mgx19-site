@@ -88,35 +88,38 @@ font-size:36px;
 
 }
 
-.hero-buttons{
-
-margin-top:20px;
-
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
 }
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+
+
 
 .btn-primary{
 
 background:#25D366;
 color:white;
-padding:12px 20px;
-border-radius:6px;
-text-decoration:none;
 
 }
 
 .btn-secondary{
-
-
-  margin-left:10px;
-  padding:12px 20px;
-  border-radius:6px;
+  
   border:2px solid #0077ff;
   color:#0077ff;
-  text-decoration:none;
-  display:inline-block;
-
-
 }
+
 
 .btn-secondary:hover {
   background:#0077ff;
@@ -127,18 +130,21 @@ text-decoration:none;
 
 background: #f1f5f9; /*white;*/
 color:#111; 
-padding:60px 20px;
+padding:40px 20px;
 text-align:center;
 border-top: 1px solid #e5e7eb; /* 👈 separação sutil */
 
+}
 
-
+.problema h2 {
+  margin-bottom: 10px;
 }
 
 .highlight{
 
 font-weight:bold;
 margin-top:20px;
+margin-bottom: 0;
 
 }
 
@@ -146,7 +152,7 @@ margin-top:20px;
 
 background:#f5f7fa;
 color:#111;
-padding:60px 20px;
+padding:40px 20px;
 
 }
 
@@ -154,12 +160,10 @@ padding:60px 20px;
   color:#111;
 }
 
-.produtos-grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-
+.produtos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .produto {
@@ -190,6 +194,11 @@ color:white;
 padding:60px 20px;
 text-align:center;
 
+}
+
+.cta .btn {
+  max-width: 300px;
+  margin: 20px auto 0;
 }
 
 .contato{
@@ -244,14 +253,75 @@ padding:30px;
 }
 
 
-@media (max-width: 768px) {
+.menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+}
 
-  .hero h1 {
-    font-size: 24px;
+.menu.active {
+  display: flex;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+/* era 768px*/
+  .menu-toggle {
+    display: block;
   }
 
-  nav {
+  .menu {
     display: none;
   }
 
+}
+
+@media (min-width: 768px) {
+
+
+  .menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background: none;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn {
+    max-width: 250px;
+  }
+
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .produtos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .produtos-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
