@@ -32,3 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+// BOTÃO WHATSAPP COM DELAY + ANIMAÇÃO
+const whatsappBtn = document.querySelector(".whatsapp-float");
+
+setTimeout(() => {
+  if (whatsappBtn) {
+    whatsappBtn.classList.add("show");
+
+    // ativa pulse depois da entrada
+    setTimeout(() => {
+      whatsappBtn.classList.add("pulse");
+    }, 500);
+  }
+}, 3000); // aparece após 3 segundos

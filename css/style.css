@@ -68,8 +68,15 @@ text-decoration:none;
   border-radius: 50%;
   font-size: 20px;
   z-index: 999;
-  transition: transform 0.3s;
-  animation: pulse 2s infinite;
+
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+  transition: all 0.5s ease;
+}
+
+.whatsapp-float.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .whatsapp-float:hover {
@@ -95,6 +102,9 @@ text-decoration:none;
   }
 }
 
+.whatsapp-float.pulse {
+  animation: pulse 3s infinite;
+}
 
 .hero {
 
