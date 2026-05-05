@@ -210,19 +210,34 @@ padding:40px 20px;
   color: #e2e8f0; 
   padding: 20px;
   border-radius: 12px;
-  transition: 0.3s;
+  /*transition: 0.3s;*/
+  transition: all 0.25s ease;
+  position: relative;
 }
 
 .produto-link {
-  text-decoration: none;
   display: block;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+/*.produto-link:hover .produto {
+  transform: translateY(-5px);
+}*/
 
 .produto-link:hover .produto {
-  transform: translateY(-5px);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
+.produto-link:hover .produto::after {
+  opacity: 0.5;
+}
 
+.produto-link:active .produto {
+  transform: scale(0.98);
+  background: #334155;
+}
 
 .produto h3 {
   color: #ffffff;
@@ -237,6 +252,16 @@ padding:40px 20px;
   transform: translateY(-5px);
 }
 
+.produto::after {
+  content: "→";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+
 .cta{
 
 background:#0077ff;
@@ -249,6 +274,13 @@ text-align:center;
 .cta .btn {
   max-width: 300px;
   margin: 20px auto 0;
+}
+
+.cta-card {
+  display: inline-block;
+  margin-top: 10px;
+  color: #22c55e;
+  font-weight: bold;
 }
 
 .contato{
@@ -391,5 +423,11 @@ padding:30px;
 @media (min-width: 1024px) {
   .produtos-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (hover: none) {
+  .produto::after {
+    opacity: 0.5;
   }
 }
