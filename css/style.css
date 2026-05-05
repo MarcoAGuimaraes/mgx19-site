@@ -29,11 +29,23 @@ border-bottom:1px solid #eee;
 }
 
 
-.logo{
+.logo {
+    display: flex;
+    align-items: center;
+}
 
-color: #111;
-font-weight:bold;
-font-size:22px;
+.logo img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
+    transition: transform 0.2s ease;
+}
+
+
+.logo img:hover {
+    transform: scale(1.05);
+
 
 }
 
