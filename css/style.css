@@ -178,6 +178,7 @@ border-top: 1px solid #e5e7eb; /* 👈 separação sutil */
   margin-bottom: 10px;
 }
 
+
 .highlight{
 
 font-weight:bold;
@@ -211,6 +212,17 @@ padding:40px 20px;
   border-radius: 12px;
   transition: 0.3s;
 }
+
+.produto-link {
+  text-decoration: none;
+  display: block;
+}
+
+.produto-link:hover .produto {
+  transform: translateY(-5px);
+}
+
+
 
 .produto h3 {
   color: #ffffff;
