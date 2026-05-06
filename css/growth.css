@@ -1,0 +1,18 @@
+body {
+    background: #1e1b4b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    background: #312e81;
+}
+
+.btn-voltar {
+    background: #312e81;
+}
+
+h1 {
+    font-size: 26px;
+}
