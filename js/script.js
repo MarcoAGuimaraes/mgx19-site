@@ -11,6 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const menuLinks = document.querySelectorAll(".menu a");
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+
+
+
+
   // EMAILJS INIT
   emailjs.init("ln3paXVg4VoRXCS0U");
 
