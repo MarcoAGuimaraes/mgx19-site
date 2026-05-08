@@ -41,23 +41,7 @@ document.querySelectorAll("[data-whatsapp]")
     }
 });
 
-
-
  
-
-document.querySelectorAll("[data-whatsapp]")
-
-  .forEach((element) => {
-
-    const key =
-      element.dataset.whatsapp;
-
-    if (whatsappLinks[key]) {
-
-      element.href =
-        whatsappLinks[key];
-    }
-});
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -88,9 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
   emailjs.init("ln3paXVg4VoRXCS0U");
 
   // FORM
-  const form = document.getElementById("contact-form");
+  const form =
+  document.getElementById("contact-form");
 
-  form.addEventListener("submit", function (e) {
+  if (form) {
+
+    form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     emailjs.sendForm("service_9k04ynr", "template_z2piglm", this)
@@ -101,9 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Erro ao enviar. Tente novamente.");
         console.log(error);
       });
-
   });
-
+  }
 });
 
 // BOTÃO WHATSAPP COM DELAY + ANIMAÇÃO
