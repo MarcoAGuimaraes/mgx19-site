@@ -1,0 +1,303 @@
+.about-hero {
+
+    background:
+        linear-gradient(
+            rgba(15,23,42,0.92),
+            rgba(15,23,42,0.94)
+        );
+
+    padding: 100px 20px;
+}
+
+.about-hero-content {
+
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-photo img {
+
+    width: 100%;
+    border-radius: 24px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.35);
+}
+
+.about-tag {
+
+    display: inline-block;
+
+    background: rgba(59,130,246,0.15);
+
+    color: #60a5fa;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.about-text h1 {
+
+    font-size: 44px;
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+.about-description {
+
+    color: #cbd5e1;
+
+    line-height: 1.9;
+
+    margin-bottom: 22px;
+
+    font-size: 17px;
+}
+
+.about-signature {
+
+    margin-top: 35px;
+}
+
+.about-signature strong {
+
+    display: block;
+
+    font-size: 20px;
+
+    color: white;
+}
+
+.about-signature span {
+
+    color: #60a5fa;
+}
+
+.experience-section,
+.cases-section,
+.stack-section {
+    padding: 90px 20px;
+}
+
+.experience-section {
+    background: #ffffff;
+    color: #111827;
+}
+.cases-section {
+/*    background: #dbe7f5;
+    color: #111827;*/
+    background:
+        linear-gradient(
+            to bottom,
+            #dfeaf7,
+            #d6e3f3
+        );
+
+    color: #111827;
+
+
+}
+ 
+.stack-section {
+    background: #0f172a;
+    text-align: center;
+}
+
+.experience-section h2,
+.cases-section h2,
+.stack-section h2,
+.about-cta h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    text-align: center;
+    /*border: 3px solid rgb(0, 255, 34);*/
+}
+
+.section-subtitle {
+
+    max-width: 700px;
+    line-height: 1.8;
+    margin: 0 auto 50px;
+    color: #64748b;
+    text-align: center;
+}
+
+.experience-grid,
+.cases-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.experience-card,
+.case-card {
+
+    background: white;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+}
+
+.experience-card {
+
+    padding: 35px;
+}
+
+.experience-card h3 {
+
+    margin-bottom: 16px;
+
+    color: #0f172a;
+}
+
+.experience-card p {
+
+    line-height: 1.8;
+
+    color: #475569;
+}
+
+
+.case-card img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: contain;
+
+    background: #0f172a;
+
+    display: block;
+}
+
+.case-content {
+
+    padding: 30px;
+}
+
+.case-tag {
+
+    display: inline-block;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+
+    margin-bottom: 16px;
+}
+
+.case-content h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.case-content p {
+
+    line-height: 1.8;
+
+    color: #475569;
+
+    margin-bottom: 25px;
+}
+
+.case-link {
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 45px;
+}
+.stack-grid span {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 14px 18px;
+    border-radius: 12px;
+    color: #e2e8f0;
+    font-size: 14px;
+}
+.about-cta {
+    background: #2563eb;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+.about-cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+.about-cta .btn {
+    max-width: 280px;
+    margin: auto;
+}
+
+
+
+
+@media(max-width: 900px){
+
+    .about-hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-photo {
+        max-width: 280px;
+        margin: auto;
+    }
+    .experience-grid,
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-text h1 {
+        font-size: 34px;
+    }
+    .experience-section h2,
+    .cases-section h2,
+    .stack-section h2,
+    .about-cta h2 {
+
+        font-size: 30px;
+        /*text-align: center;*/
+               
+
+    }
+}
+
+ 
