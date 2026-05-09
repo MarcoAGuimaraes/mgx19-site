@@ -3,24 +3,25 @@
 const whatsappLinks = {
 
   mgx19:
-    "https://wa.me/5511921187806?text=MGX19%20contactar",
+    "https://wa.me/5511921187806?text=Olá!%20Vim%20pelo%20site%20da%20%23MGX19%20e%20gostaria%20de%20conhecer%20melhor%20as%20soluções%20digitais.",
+
   starter:
     "https://wa.me/5511921187806?text=Olá!%20Vim%20pelo%20site%20da%20%23MGX19%20e%20tenho%20interesse%20na%20solução%20Starter.",
 
   growth:
-    "https://wa.me/5511921187806?text=MGX19%20contactar",
+    "https://wa.me/5511921187806?text=Olá!%20Vim%20pelo%20site%20da%20%23MGX19%20e%20tenho%20interesse%20na%20solução%20Growth.",
 
   pro:
-    "https://wa.me/5511921187806?text=MGX19%20contactar",
+    "https://wa.me/5511921187806?text=Olá!%20Vim%20pelo%20site%20da%20%23MGX19%20e%20tenho%20interesse%20na%20solução%20Pro.",
 
   consultoria:
-    "https://wa.me/5511921187806?text=MGX19%20contactar",
+    "https://wa.me/5511921187806?text=Olá!%20Vim%20pelo%20site%20da%20%23MGX19%20e%20tenho%20interesse%20em%20consultoria%20especializada.",
 
   mareag:
-    "https://wa.me/5511921187806?text=MGX19%20contactar",
+    "https://wa.me/5511921187806?text=Olá!%20Vim%20pelo%20site%20da%20%23Mareag%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos.",
 
   beatriz:
-    "https://wa.me/5511921187806?text=MGX19%20contactar"
+    "https://wa.me/5511921187806?text=Olá!%20Vim%20pelo%20site%20da%20%23BeatrizDV%20e%20gostaria%20de%20mais%20informações."
 };
 
 
