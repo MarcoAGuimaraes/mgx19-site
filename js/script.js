@@ -3,24 +3,24 @@
 const whatsappLinks = {
 
   mgx19:
-    "https://wa.me/5511921187806?text=MGX19%20contactar",
+    "https://wa.me/5511921187806?text=MGX19",
   starter:
-    "https://wa.me/5511921187806?text=Olá!%20Vim%20pelo%20site%20da%20%23MGX19%20e%20tenho%20interesse%20na%20solução%20Starter.",
+    "https://wa.me/5511921187806?text=MGX19",
 
   growth:
-    "https://wa.me/5511921187806?text=MGX19%20contactar",
+    "https://wa.me/5511921187806?text=MGX19",
 
   pro:
-    "https://wa.me/5511921187806?text=MGX19%20contactar",
+    "https://wa.me/5511921187806?text=MGX19",
 
   consultoria:
-    "https://wa.me/5511921187806?text=MGX19%20contactar",
+    "https://wa.me/5511921187806?text=MGX19",
 
   mareag:
-    "https://wa.me/5511921187806?text=MGX19%20contactar",
+    "https://wa.me/5511921187806?text=MGX19",
 
   beatriz:
-    "https://wa.me/5511921187806?text=MGX19%20contactar"
+    "https://wa.me/5511921187806?text=MGX19"
 };
 
 
