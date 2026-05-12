@@ -155,7 +155,8 @@ nav a {
   /*#f5f7fa;*/
   color: #111;
   /* 👈 ESSENCIAL  */
-  padding: 80px 20px;
+  /*padding: 80px 20px;*/
+  padding: 40px 20px 80px; /*40 topo 20laterais 80 bottom*/
   text-align: center;
 
 
@@ -579,4 +580,19 @@ footer {
   .produto::after {
     opacity: 0.5;
   }
+}
+
+#home,
+#produtos,
+#como-funciona,
+#contato {
+  scroll-margin-top: 50px;
+}
+
+#faq {
+  scroll-margin-top: 200px;
+}
+
+#quemsomos{
+  scroll-margin-top: 200px;
 }

@@ -103,7 +103,7 @@ setTimeout(() => {
       whatsappBtn.classList.add("pulse");
     }, 500);
   }
-}, 3000); // aparece após 3 segundos
-
 
  
+}, 3000); // aparece após 3 segundos
+
