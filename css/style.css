@@ -26,21 +26,15 @@ body {
 }
 
 
-/*
-header {
-background:white;
-border-bottom:1px solid #eee;
-} */
 
 header {
   background: white;
   border-bottom: 1px solid #eee;
-
   position: sticky;
   top: 0;
   z-index: 1000;
-
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  /*height: 72px;*/
 }
 
 
@@ -64,6 +58,10 @@ header {
 .header-container {
   display: flex;
   align-items: center;
+  /*min-height: 72px;*/
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -152,13 +150,12 @@ nav a {
 .hero {
 
   background: #e2e8f0;
-  /*#f5f7fa;*/
+ 
   color: #111;
-  /* 👈 ESSENCIAL  */
-  /*padding: 80px 20px;*/
+
   padding: 40px 20px 80px; /*40 topo 20laterais 80 bottom*/
   text-align: center;
-
+  
 
 }
 
@@ -541,11 +538,15 @@ footer {
     position: static;
     flex-direction: row;
     justify-content: center;
-    /* 👈 centraliza no meio */
-    gap: 20px;
     background: none;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: nowrap;
   }
 
+  .menu a {
+  white-space: nowrap;
+}
   .menu-toggle {
     display: none;
   }
